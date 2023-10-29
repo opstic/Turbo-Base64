@@ -3,6 +3,7 @@ authors = ["powturbo <powturbo [AT] gmail [DOT] com>"]
 build = "build.rs"
 name = "turbo-base64-sys"
 version = "0.60.0"
+license = "LGPL-3.0-or-later"
 
 [lib]
 crate-type=["dylib"]
