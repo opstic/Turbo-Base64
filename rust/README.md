@@ -2,17 +2,17 @@
 
 This is a wrapper for [Turbo-Base64](https://github.com/powturbo/Turbo-Base64).
 
-## Installation
-1- Prerequistes: build and install the Turbo-Base64 library libtb64.a into /usr/local/lib  
-
-2 - Use the provided src/bindings.rs file or generate a new rust bindings.rs file.
-```shell
-cargo build
+## Usage
+Add the git repository url to your Cargo.toml as follows:
 ```
-3 - Test 
+Turbo-Base64 = { git = "https://github.com/powturbo/turbo-base64" }
+```
+
+## Testing 
 ```shell
 cargo test
 ```
+
 ## Examples
  - see the tests.rs file in the src folder
  - a list of public functions are available in the bindings.rs file

@@ -5,7 +5,9 @@ use std::env;
 use std::path::PathBuf;
 
 fn main() {
-    println!("cargo:rustc-link-lib=tb64");
+    let dst = cmake::build("..");
+    println!("cargo:rustc-link-search=native={}/lib", dst.display());
+    println!("cargo:rustc-link-lib=static=base64");
 
     let bindings = bindgen::Builder::default()
         .header("wrapper.h")

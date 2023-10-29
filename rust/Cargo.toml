@@ -9,3 +9,4 @@ rand = "0.8"
 
 [build-dependencies]
 bindgen = "*"
+cmake = "0.1"
