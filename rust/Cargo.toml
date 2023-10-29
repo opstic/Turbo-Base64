@@ -4,6 +4,9 @@ build = "build.rs"
 name = "turbo-base64-sys"
 version = "0.60.0"
 
+[lib]
+crate-type=["dylib"]
+
 [dependencies]
 rand = "0.8"
 
